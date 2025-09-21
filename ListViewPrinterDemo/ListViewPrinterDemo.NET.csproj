@@ -95,13 +95,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ListViewPrinter\ListViewPrinter35.csproj">
+    <ProjectReference Include="..\ListViewPrinter\ListViewPrinter.NET.csproj">
       <Project>{E73A10BD-2B5A-4BAC-897F-3A58CFC07631}</Project>
-      <Name>ListViewPrinter2022</Name>
+      <Name>ListViewPrinter.NET</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ObjectListView\ObjectListView35.csproj">
+    <ProjectReference Include="..\ObjectListView\ObjectListView.NET.csproj">
       <Project>{18FEDA0C-D147-4286-B39A-01204808106A}</Project>
-      <Name>ObjectListView</Name>
+      <Name>ObjectListView.NET</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

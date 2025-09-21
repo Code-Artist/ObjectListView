@@ -321,17 +321,17 @@
     <None Include="Resources\movie16.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ListViewPrinter\ListViewPrinter35.csproj">
+    <ProjectReference Include="..\ListViewPrinter\ListViewPrinter.NET.csproj">
       <Project>{E73A10BD-2B5A-4BAC-897F-3A58CFC07631}</Project>
-      <Name>ListViewPrinter2022</Name>
+      <Name>ListViewPrinter.NET</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ObjectListView\ObjectListView35.csproj">
+    <ProjectReference Include="..\ObjectListView\ObjectListView.NET.csproj">
       <Project>{18FEDA0C-D147-4286-B39A-01204808106A}</Project>
-      <Name>ObjectListView</Name>
+      <Name>ObjectListView.NET</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SparkleLibrary\SparkleLibrary35.csproj">
+    <ProjectReference Include="..\SparkleLibrary\SparkleLibrary.NET.csproj">
       <Project>{D63F9786-B608-4085-AF08-D909448B0426}</Project>
-      <Name>SparkleLibrary2022</Name>
+      <Name>SparkleLibrary.NET</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

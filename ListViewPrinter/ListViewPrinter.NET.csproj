@@ -82,9 +82,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ObjectListView\ObjectListView35.csproj">
+    <ProjectReference Include="..\ObjectListView\ObjectListView.NET.csproj">
       <Project>{18FEDA0C-D147-4286-B39A-01204808106A}</Project>
-      <Name>ObjectListView</Name>
+      <Name>ObjectListView.NET</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
