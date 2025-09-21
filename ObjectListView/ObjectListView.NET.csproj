@@ -15,7 +15,7 @@
     <RootNamespace>BrightIdeasSoftware</RootNamespace>
     <AssemblyName>ObjectListView</AssemblyName>
     <AssemblyOriginatorKeyFile>olv-keyfile.snk</AssemblyOriginatorKeyFile>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <SccProjectName>%24/ObjectListView/trunk/ObjectListView</SccProjectName>
     <SccLocalPath>.</SccLocalPath>
     <SccAuxPath>https://grammarian.visualstudio.com</SccAuxPath>
