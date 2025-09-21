@@ -191,14 +191,14 @@ namespace BrightIdeasSoftware
 			if(first <= last)
 				for(Int32 i = first; i <= last; i++)
 				{
-					String data = column.GetStringValue(this._listView.GetNthItemInDisplayOrder(i).RowObject);
+					String data = column.GetStringValue(this.listView.GetNthItemInDisplayOrder(i).RowObject);
 					if(data.StartsWith(value, StringComparison.CurrentCultureIgnoreCase))
 						return i;
 				}
 			else
 				for(Int32 i = first; i >= last; i--)
 				{
-					String data = column.GetStringValue(this._listView.GetNthItemInDisplayOrder(i).RowObject);
+					String data = column.GetStringValue(this.listView.GetNthItemInDisplayOrder(i).RowObject);
 					if(data.StartsWith(value, StringComparison.CurrentCultureIgnoreCase))
 						return i;
 				}
@@ -213,7 +213,7 @@ namespace BrightIdeasSoftware
 		{
 			if(order != SortOrder.None)
 			{
-				ModelObjectComparer comparer = new ModelObjectComparer(column, order, this._listView.SecondarySortColumn, this._listView.SecondarySortOrder);
+				ModelObjectComparer comparer = new ModelObjectComparer(column, order, this.listView.SecondarySortColumn, this.listView.SecondarySortOrder);
 				this.ObjectList.Sort(comparer);
 				this.FilteredObjectList.Sort(comparer);
 			}
@@ -262,7 +262,7 @@ namespace BrightIdeasSoftware
 			indicesToRemove.Reverse();
 
 			foreach(Int32 i in indicesToRemove)
-				this._listView.SelectedIndices.Remove(i);
+				this.listView.SelectedIndices.Remove(i);
 
 			// Remove the objects from the unfiltered list
 			foreach(Object modelObject in modelObjects)
@@ -338,7 +338,7 @@ namespace BrightIdeasSoftware
 		protected void FilterObjects()
 		{
 			// If this list isn't filtered, we don't need to do anything else
-			if(!this._listView.UseFiltering)
+			if(!this.listView.UseFiltering)
 			{
 				this.FilteredObjectList = new ArrayList(this.ObjectList);
 				return;
@@ -347,7 +347,7 @@ namespace BrightIdeasSoftware
 			// Tell the world to filter the objects. If they do so, don't do anything else
 			// ReSharper disable PossibleMultipleEnumeration
 			FilterEventArgs args = new FilterEventArgs(this.ObjectList);
-			this._listView.OnFilter(args);
+			this.listView.OnFilter(args);
 			if(args.FilteredObjects != null)
 			{
 				this.FilteredObjectList = ObjectListView.EnumerableToArray(args.FilteredObjects, false);

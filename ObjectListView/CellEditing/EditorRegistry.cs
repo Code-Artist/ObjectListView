@@ -193,6 +193,15 @@ namespace BrightIdeasSoftware
 			=> obj is EditorRegistry registry &&
 				   EqualityComparer<Dictionary<Type, EditorCreatorDelegate>>.Default.Equals(this._creatorMap, registry._creatorMap);
 
+		public override Int32 GetHashCode()
+		{
+			Int32 hashCode = -265549196;
+			hashCode = hashCode * -1521134295 + EqualityComparer<EditorCreatorDelegate>.Default.GetHashCode(this.firstChanceCreator);
+			hashCode = hashCode * -1521134295 + EqualityComparer<EditorCreatorDelegate>.Default.GetHashCode(this._defaultCreator);
+			hashCode = hashCode * -1521134295 + EqualityComparer<Dictionary<Type, EditorCreatorDelegate>>.Default.GetHashCode(this._creatorMap);
+			return hashCode;
+		}
+
 		#endregion
 
 		#region Private variables

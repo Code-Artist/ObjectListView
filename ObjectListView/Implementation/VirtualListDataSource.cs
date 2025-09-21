@@ -120,10 +120,10 @@ namespace BrightIdeasSoftware
 		/// <summary>Creates an AbstractVirtualListDataSource</summary>
 		/// <param name="listView"></param>
 		public AbstractVirtualListDataSource(VirtualObjectListView listView)
-			=> this._listView = listView;
+			=> this.listView = listView;
 
 		/// <summary>The list view that this data source is giving information to.</summary>
-		protected VirtualObjectListView _listView;
+		protected VirtualObjectListView listView { get; set; }
 
 		/// <summary></summary>
 		/// <param name="n"></param>

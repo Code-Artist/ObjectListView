@@ -578,7 +578,6 @@ namespace BrightIdeasSoftware
 
 		/// <summary>Mess with the basic message pump of the tooltip</summary>
 		/// <param name="msg"></param>
-		[SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.UnmanagedCode)]
 		override protected void WndProc(ref Message msg)
 		{
 			//System.Diagnostics.Trace.WriteLine(String.Format("xx {0:x}", msg.Msg));
