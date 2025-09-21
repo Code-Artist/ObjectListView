@@ -256,7 +256,7 @@ namespace BrightIdeasSoftware.Tests
 			}
 		}
 
-		[TestFixtureSetUp]
+		[OneTimeSetUp]
 		public void Init()
 		{
 			this.olv = MyGlobals.mainForm.objectListView1;
@@ -267,7 +267,7 @@ namespace BrightIdeasSoftware.Tests
 	[TestFixture]
 	public class TestFastOlvFormatting : TestOlvFormatting
 	{
-		[TestFixtureSetUp]
+		[OneTimeSetUp]
 		new public void Init()
 		{
 			this.olv = MyGlobals.mainForm.fastObjectListView1;
@@ -277,7 +277,7 @@ namespace BrightIdeasSoftware.Tests
 	[TestFixture]
 	public class TestTreeListViewFormatting : TestOlvFormatting
 	{
-		[TestFixtureSetUp]
+		[OneTimeSetUp]
 		new public void Init()
 		{
 			this.olv = MyGlobals.mainForm.treeListView1;

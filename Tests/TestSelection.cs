@@ -140,7 +140,7 @@ namespace BrightIdeasSoftware.Tests
 		}
 		protected int countSelectionChanged;
 
-		[TestFixtureSetUp]
+		[OneTimeSetUp]
 		public void Init()
 		{
 			this.olv = MyGlobals.mainForm.objectListView1;
@@ -151,7 +151,7 @@ namespace BrightIdeasSoftware.Tests
 	[TestFixture]
 	public class TestFastOlvSelection : TestOlvSelection
 	{
-		[TestFixtureSetUp]
+		[OneTimeSetUp]
 		new public void Init()
 		{
 			this.olv = MyGlobals.mainForm.fastObjectListView1;
@@ -161,7 +161,7 @@ namespace BrightIdeasSoftware.Tests
 	[TestFixture]
 	public class TestTreeListViewSelection : TestOlvSelection
 	{
-		[TestFixtureSetUp]
+		[OneTimeSetUp]
 		new public void Init()
 		{
 			this.olv = this.treeListView = MyGlobals.mainForm.treeListView1;

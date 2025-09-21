@@ -338,7 +338,7 @@ namespace BrightIdeasSoftware.Tests
 			Assert.AreEqual(0, ranges.Count);
 		}
 
-		[TestFixtureSetUp]
+		[OneTimeSetUp]
 		public void Init()
 		{
 			this.olv = MyGlobals.mainForm.objectListView1;

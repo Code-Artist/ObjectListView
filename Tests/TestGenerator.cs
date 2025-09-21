@@ -183,7 +183,7 @@ namespace BrightIdeasSoftware.Tests
 	[TestFixture]
 	public class TestGenerator
 	{
-		[TestFixtureSetUp]
+		[OneTimeSetUp]
 		public void Init()
 			=> this.olv = MyGlobals.mainForm.objectListView2;
 
@@ -382,7 +382,7 @@ namespace BrightIdeasSoftware.Tests
 	public class TestColumnBuildingForTreeListView
 	{
 
-		[TestFixtureSetUp]
+		[OneTimeSetUp]
 		public void Init()
 			=> this.tolv = MyGlobals.mainForm.treeListView1;
 
